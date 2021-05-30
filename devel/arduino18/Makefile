@@ -98,6 +98,7 @@ post-extract:
 post-patch:
 	${REINPLACE_CMD} -e 's:<BINARY_LOCATION>:arduino:' -e 's:<ICON_NAME>:arduino:' \
 		${PATCH_WRKSRC}/build/linux/dist/desktop.template
+	${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/../arduino-core/src/processing/app/BaseNoGui.java
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${PORTNAME}
