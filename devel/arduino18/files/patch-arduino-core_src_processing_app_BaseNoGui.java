@@ -5,7 +5,7 @@
          toolPath = installedFolder.getAbsolutePath();
        } else {
 -        toolPath = Constants.PREF_REMOVE_PLACEHOLDER;
-+        toolPath = "/usr/local";
++        toolPath = "%%PREFIX%%";
        }
        String toolName = tool.getName();
        String toolVersion = tool.getVersion();
