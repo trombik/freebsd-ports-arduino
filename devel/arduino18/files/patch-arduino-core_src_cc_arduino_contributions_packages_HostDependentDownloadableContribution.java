@@ -1,6 +1,6 @@
---- arduino-core/src/cc/arduino/contributions/packages/HostDependentDownloadableContribution.java.orig	2016-09-21 10:09:37 UTC
+--- arduino-core/src/cc/arduino/contributions/packages/HostDependentDownloadableContribution.java.orig	2021-05-14 13:23:52 UTC
 +++ arduino-core/src/cc/arduino/contributions/packages/HostDependentDownloadableContribution.java
-@@ -79,6 +79,16 @@ public abstract class HostDependentDownl
+@@ -106,6 +106,16 @@ public class HostDependentDownloadableContribution ext
        }
      }
  

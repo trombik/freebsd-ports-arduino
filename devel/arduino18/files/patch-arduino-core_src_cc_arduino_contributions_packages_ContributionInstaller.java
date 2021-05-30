@@ -1,52 +1,32 @@
---- arduino-core/src/cc/arduino/contributions/packages/ContributionInstaller.java.orig	2017-03-16 17:38:01 UTC
+--- arduino-core/src/cc/arduino/contributions/packages/ContributionInstaller.java.orig	2021-05-14 13:23:52 UTC
 +++ arduino-core/src/cc/arduino/contributions/packages/ContributionInstaller.java
-@@ -281,47 +281,11 @@ public class ContributionInstaller {
+@@ -284,29 +284,5 @@ public class ContributionInstaller {
    }
  
-   public synchronized List<String> updateIndex(ProgressListener progressListener) throws Exception {
+   public synchronized void updateIndex(ProgressListener progressListener) {
 -    MultiStepProgress progress = new MultiStepProgress(1);
 -
--    List<String> downloadedPackageIndexFilesAccumulator = new LinkedList<>();
--    downloadIndexAndSignature(progress, downloadedPackageIndexFilesAccumulator, Constants.PACKAGE_INDEX_URL, progressListener);
+-    final DownloadableContributionsDownloader downloader = new DownloadableContributionsDownloader(BaseNoGui.indexer.getStagingFolder());
 -
--    Set<String> packageIndexURLs = new HashSet<>();
--    String additionalURLs = PreferencesData.get(Constants.PREF_BOARDS_MANAGER_ADDITIONAL_URLS, "");
--    if (!"".equals(additionalURLs)) {
--      packageIndexURLs.addAll(Arrays.asList(additionalURLs.split(",")));
--    }
+-    final Set<String> packageIndexURLs = new HashSet<>(
+-      PreferencesData.getCollection(Constants.PREF_BOARDS_MANAGER_ADDITIONAL_URLS)
+-    );
+-    packageIndexURLs.add(Constants.PACKAGE_INDEX_URL);
 -
--    for (String packageIndexURL : packageIndexURLs) {
+-    for (String packageIndexURLString : packageIndexURLs) {
 -      try {
--        downloadIndexAndSignature(progress, downloadedPackageIndexFilesAccumulator, packageIndexURL, progressListener);
+-        // Extract the file name from the URL
+-        final URL packageIndexURL = new URL(packageIndexURLString);
+-
+-        log.info("Start download and signature check of={}", packageIndexURLs);
+-        downloader.downloadIndexAndSignature(progress, packageIndexURL, progressListener, signatureVerifier);
 -      } catch (Exception e) {
+-        log.error(e.getMessage(), e);
 -        System.err.println(e.getMessage());
 -      }
 -    }
 -
 -    progress.stepDone();
--
--    return downloadedPackageIndexFilesAccumulator;
-+    return new LinkedList<>();
+-    log.info("Downloaded package index URL={}", packageIndexURLs);
    }
- 
-   private void downloadIndexAndSignature(MultiStepProgress progress, List<String> downloadedPackagedIndexFilesAccumulator, String packageIndexUrl, ProgressListener progressListener) throws Exception {
--    File packageIndex = download(progress, packageIndexUrl, progressListener);
--    downloadedPackagedIndexFilesAccumulator.add(packageIndex.getName());
--    try {
--      File packageIndexSignature = download(progress, packageIndexUrl + ".sig", progressListener);
--      boolean signatureVerified = signatureVerifier.isSigned(packageIndex);
--      if (signatureVerified) {
--        downloadedPackagedIndexFilesAccumulator.add(packageIndexSignature.getName());
--      } else {
--        downloadedPackagedIndexFilesAccumulator.remove(packageIndex.getName());
--        Files.delete(packageIndex.toPath());
--        Files.delete(packageIndexSignature.toPath());
--        System.err.println(I18n.format(tr("{0} file signature verification failed. File ignored."), packageIndexUrl));
--      }
--    } catch (Exception e) {
--      //ignore errors
--    }
-+    return;
-   }
- 
-   private File download(MultiStepProgress progress, String packageIndexUrl, ProgressListener progressListener) throws Exception {
+ }

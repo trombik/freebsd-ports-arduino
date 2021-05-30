@@ -1,6 +1,6 @@
---- arduino-core/src/processing/app/BaseNoGui.java.orig	2017-03-16 17:38:01 UTC
+--- arduino-core/src/processing/app/BaseNoGui.java.orig	2021-05-14 13:23:52 UTC
 +++ arduino-core/src/processing/app/BaseNoGui.java
-@@ -688,7 +688,7 @@ public class BaseNoGui {
+@@ -702,7 +702,7 @@ public class BaseNoGui {
        if (installedFolder != null) {
          toolPath = installedFolder.getAbsolutePath();
        } else {
