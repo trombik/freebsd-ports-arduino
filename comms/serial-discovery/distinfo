@@ -1,0 +1,17 @@
+TIMESTAMP = 1624505922
+SHA256 (arduino-serial-discovery-1.2.1-v1.2.1_GH0.tar.gz) = ae791a4c150b69e7df5c567cb5d07cb07a6b4acce4f07e73154bad82aa30bdbe
+SIZE (arduino-serial-discovery-1.2.1-v1.2.1_GH0.tar.gz) = 23549
+SHA256 (arduino-go-paths-helper-v1.5.0_GH0.tar.gz) = efa58206f9744b673db8339a8c99abac471636270be558aac2c401944b8de1c6
+SIZE (arduino-go-paths-helper-v1.5.0_GH0.tar.gz) = 16921
+SHA256 (arduino-go-properties-orderedmap-v1.4.0_GH0.tar.gz) = 55060b7b4138328c84dd8522d46a8776d997c48a583f43389b36265e80ece4dd
+SIZE (arduino-go-properties-orderedmap-v1.4.0_GH0.tar.gz) = 19626
+SHA256 (creack-goselect-v0.1.2_GH0.tar.gz) = ca13d87a2bc62ec12b90606ed1738c32be924d2153a9c4a5c7cd3ea999559f6f
+SIZE (creack-goselect-v0.1.2_GH0.tar.gz) = 7409
+SHA256 (golang-sys-77cc2087c03b_GH0.tar.gz) = cbb33c2edcde62950dd0245eec3e6b7632552bcc62cb79e0aab277d2786c281c
+SIZE (golang-sys-77cc2087c03b_GH0.tar.gz) = 1177961
+SHA256 (pkg-errors-v0.9.1_GH0.tar.gz) = 56bfd893023daa498508bfe161de1be83299fcf15376035e7df79cbd7d6fa608
+SIZE (pkg-errors-v0.9.1_GH0.tar.gz) = 13415
+SHA256 (s-urbaniak-uevent-v1.0.0_GH0.tar.gz) = 095deae34dc4c575971451d9c01d0869720ee65ecaf7d9004528f21009af1c48
+SIZE (s-urbaniak-uevent-v1.0.0_GH0.tar.gz) = 1813
+SHA256 (bugst-go-serial-v1.1.3_GH0.tar.gz) = 4c44afd4ea754967e5333fdf8f8fae91e4653c3f3daf4ac48b38d1620ced5703
+SIZE (bugst-go-serial-v1.1.3_GH0.tar.gz) = 24736
