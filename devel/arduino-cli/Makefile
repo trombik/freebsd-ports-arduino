@@ -1,5 +1,3 @@
-# $FreeBSD$
-
 PORTNAME=	arduino-cli
 DISTVERSION=	0.18.3
 CATEGORIES=	devel
@@ -9,6 +7,10 @@ COMMENT=	Arduino command line tool
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+RUN_DEPENDS=	\
+	serial-discovery:comms/serial-discovery \
+	arduino-builder:devel/arduino-builder
 
 USES=	go:modules
 
