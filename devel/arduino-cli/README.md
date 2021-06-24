@@ -1,3 +1,12 @@
+# `devel/arduino-cli`
+
+A CLI tool to build Arduino sketches.
+
+## Status
+
+* Alpha. It works with some hacks on local machine
+* Compiles a simple Blink example for AVR
+
 ```console
 > pwd
 /home/trombik/foo
@@ -11,4 +20,8 @@
 │           └── serial-discovery
 │               └── 1.2.1
 └── staging
+```
+
+```console
+> arduino-cli compile -b arduino:avr:uno --build-property "compiler.path = /usr/local/arduino/tools-builder/avr-gcc/4.9.2-atmel3.5.4-arduino2/bin/" -v
 ```
