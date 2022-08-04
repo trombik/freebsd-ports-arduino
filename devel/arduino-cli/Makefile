@@ -17,7 +17,7 @@ USES=	go:modules
 USE_GITHUB=	yes
 GH_ACCOUNT= arduino
 
-GH_TUPLE=	\
+AUTO_GH_TUPLE=	\
 	arduino:board-discovery:1ba29327fb0c:arduino_board_discovery/vendor/github.com/arduino/board-discovery \
 	arduino:go-paths-helper:v1.7.0:arduino_go_paths_helper/vendor/github.com/arduino/go-paths-helper \
 	arduino:go-properties-orderedmap:v1.6.0:arduino_go_properties_orderedmap/vendor/github.com/arduino/go-properties-orderedmap \
