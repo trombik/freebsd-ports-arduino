@@ -15,7 +15,7 @@ USES=	go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT= arduino
-GO_BUILDFLAGS=	-ldflags "-X main.version=${DISTVERSION}"
+GO_BUILDFLAGS=	-ldflags "-X github.com/arduino/arduino-cli/version.versionString=${DISTVERSION}"
 
 AUTO_GH_TUPLE=	\
 	arduino:board-discovery:1ba29327fb0c:arduino_board_discovery/vendor/github.com/arduino/board-discovery \
