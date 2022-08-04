@@ -1,4 +1,4 @@
-TIMESTAMP = 1659615674
+TIMESTAMP = 1659616325
 SHA256 (arduino-arduino-cli-0.25.1_GH0.tar.gz) = 1a35e9a8f6352c4cdb385eefdecf8745afbe424d28b7edcd18bed0e67b8bcfdc
 SIZE (arduino-arduino-cli-0.25.1_GH0.tar.gz) = 8607569
 SHA256 (arduino-board-discovery-1ba29327fb0c_GH0.tar.gz) = 7db4072fcdee9cbf41db877fa24f6a408f39830c76960e33ef7a45292e2ac865
@@ -157,8 +157,8 @@ SHA256 (bugst-go-cleanup-v1.0.0_GH0.tar.gz) = 0493fa584b79de9194459939a5dfc07388
 SIZE (bugst-go-cleanup-v1.0.0_GH0.tar.gz) = 2205
 SHA256 (bugst-relaxed-semver-v0.9.0_GH0.tar.gz) = 6c9c2bdf3e2b794990bf74d4e068a42edd6c28464e3c087976278ad19c73a65c
 SIZE (bugst-relaxed-semver-v0.9.0_GH0.tar.gz) = 20905
-SHA256 (bugst-go-serial-v1.3.2_GH0.tar.gz) = 2b233f495a06a227f8cd9a9b5268b91b3627a9553b667572738edac539ecc785
-SIZE (bugst-go-serial-v1.3.2_GH0.tar.gz) = 26136
+SHA256 (bugst-go-serial-5f7892a7bb45_GH0.tar.gz) = b4d99066bc23feb953461772460c96959c5f956039f7e2894a19a220018bf954
+SIZE (bugst-go-serial-5f7892a7bb45_GH0.tar.gz) = 23047
 SHA256 (bugst-go-downloader-v2.1.1_GH0.tar.gz) = 223ae7c8bf7322dcb9daa3704007c055f7df1f39cac6ba45fac30c44238de9c1
 SIZE (bugst-go-downloader-v2.1.1_GH0.tar.gz) = 6614
 SHA256 (protocolbuffers-protobuf-go-v1.26.0_GH0.tar.gz) = 26218474bcf776ecf32d7d194c6bfaca8e7b4f0c087e5b595fd50fbb31409676

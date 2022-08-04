@@ -99,7 +99,7 @@ MANUAL_GH_TUPLE=	\
 	bugst:go-cleanup:v1.0.0:bugst_go_cleanup/vendor/go.bug.st/cleanup \
 	bugst:relaxed-semver:v0.9.0:bugst_relaxed_semver/vendor/go.bug.st/relaxed-semver \
 	bugst:go-serial:v1.3.2:bugst_go_serial/vendor/go.bug.st/serial \
-	bugst:go-serial:v1.3.2:bugst_go_serial_v1/vendor/go.bug.st/serial.v1 \
+	bugst:go-serial:5f7892a7bb45:bugst_go_serial_v1/vendor/go.bug.st/serial.v1 \
 	bugst:go-downloader:v2.1.1:bugst_go_downloader/vendor/go.bug.st/downloader/v2 \
 	protocolbuffers:protobuf-go:v1.26.0:protocolbuffers_protobuf_go/vendor/google.golang.org/protobuf
 
