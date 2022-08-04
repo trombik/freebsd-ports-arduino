@@ -25,16 +25,16 @@ BUNDLE_GH_ACCOUNT=	arduino-libraries
 BUNDLE_LIBRARIES=	\
 			Bridge:1.7.0:bridge \
 			Esplora:1.0.4:esplora \
-			Ethernet:2.0.0:ethernet \
+			Ethernet:2.0.1:ethernet \
 			GSM:1.0.6:gsm \
-			Keyboard:1.0.2:keyboard \
+			Keyboard:1.0.4:keyboard \
 			LiquidCrystal:1.0.7:liquidcrystal \
 			Mouse:1.0.1:mouse \
 			Robot_Control:1.0.4:robotcontrol \
 			Robot_Motor:1.0.3:robotmotor \
 			RobotIRremote:2.0.0:robotir \
 			SD:1.2.4:sd \
-			Servo:1.1.7:servo \
+			Servo:1.1.8:servo \
 			SpacebrewYun:1.0.2:spacebrew \
 			Stepper:1.1.3:stepper \
 			Temboo:1.2.1:temboo \
