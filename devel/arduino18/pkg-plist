@@ -1348,8 +1348,6 @@ arduino/lib/jackson-databind-2.9.5.jar
 arduino/lib/jmdns-3.5.5.jar
 arduino/lib/jssc-2.8.0-arduino4.jar
 arduino/lib/jtouchbar-1.0.0.jar
-arduino/lib/log4j-api-2.12.0.jar
-arduino/lib/log4j-core-2.12.0.jar
 arduino/lib/rsyntaxtextarea-3.0.3-SNAPSHOT.jar
 %%DOCS%%arduino/reference/Edison_help_files/ArduinoIDE_guide_edison.html
 %%DOCS%%arduino/reference/Edison_help_files/Guide_Troubleshooting_Edison.html
