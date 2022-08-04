@@ -9,13 +9,13 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	\
-	serial-discovery:comms/serial-discovery \
-	arduino-builder:devel/arduino-builder
+	serial-discovery:comms/serial-discovery
 
 USES=	go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT= arduino
+GO_BUILDFLAGS=	-ldflags "-X main.version=${DISTVERSION}"
 
 AUTO_GH_TUPLE=	\
 	arduino:board-discovery:1ba29327fb0c:arduino_board_discovery/vendor/github.com/arduino/board-discovery \
