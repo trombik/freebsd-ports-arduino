@@ -1,6 +1,6 @@
-TIMESTAMP = 1621915457
-SHA256 (arduino-arduino-cli-0.18.3_GH0.tar.gz) = 9a6827dc3fa8b111a4dd1541162288c29ef86bccff056be8d38001dc6786c111
-SIZE (arduino-arduino-cli-0.18.3_GH0.tar.gz) = 6897874
+TIMESTAMP = 1659609599
+SHA256 (arduino-arduino-cli-0.25.1_GH0.tar.gz) = 1a35e9a8f6352c4cdb385eefdecf8745afbe424d28b7edcd18bed0e67b8bcfdc
+SIZE (arduino-arduino-cli-0.25.1_GH0.tar.gz) = 8607569
 SHA256 (arduino-board-discovery-1ba29327fb0c_GH0.tar.gz) = 7db4072fcdee9cbf41db877fa24f6a408f39830c76960e33ef7a45292e2ac865
 SIZE (arduino-board-discovery-1ba29327fb0c_GH0.tar.gz) = 11908
 SHA256 (arduino-go-paths-helper-v1.4.0_GH0.tar.gz) = 3ac4a496de925e3b6a8d713ec0f29c76fd6be0817878d625e0b310ebbd944370

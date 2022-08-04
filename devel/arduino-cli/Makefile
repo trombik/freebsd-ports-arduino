@@ -1,5 +1,5 @@
 PORTNAME=	arduino-cli
-DISTVERSION=	0.18.3
+DISTVERSION=	0.25.1
 CATEGORIES=	devel
 
 MAINTAINER=	y@trombik.org
